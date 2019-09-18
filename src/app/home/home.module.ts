@@ -5,19 +5,21 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import {FirebaseUIModule} from 'firebaseui-angular';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: HomePage
-      }
-    ])
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RouterModule.forChild([
+            {
+                path: '',
+                component: HomePage
+            }
+        ]),
+        FirebaseUIModule
+    ],
   declarations: [HomePage]
 })
 export class HomePageModule {}

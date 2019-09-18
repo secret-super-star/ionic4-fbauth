@@ -1,5 +1,7 @@
 {
   "name": "SMSVerification",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
